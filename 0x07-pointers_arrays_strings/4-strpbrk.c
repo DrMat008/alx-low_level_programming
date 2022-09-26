@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
  * _strpbrk - Entry point
  *
@@ -11,7 +11,7 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, n;	
+	int i, n;
 
 	for (i = 0; s[i] != '\0'; i++)
 
@@ -21,10 +21,10 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[n])
 				return (s + i);
+
 		}
 
 	}
-
 	return (NULL);
 
 }
